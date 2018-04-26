@@ -1,315 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>TUSOC</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript">stLight.options({publisher: "ab0a5b5b-28cb-43d0-8772-1b897bd3619d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-<link rel="stylesheet" type="text/css" href="my_css_file.css">
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-	<div class="container">
-                 <!--logo-->
-                 <div class="navbar-header">
-                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 <span class="icon-bar"></span>
-                 </button>
-                 <a class="navbar-brand" href="#myPage"><img src="logo.jpg" alt="TUSOC" class="img-responsive img-rounded"></a>
-                 </div>
-                <!--menu items-->
-            <div class="collapse navbar-collapse" id="mainNavBar">
-              <ul class="nav navbar-nav ">
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#societies">SOCIETIES</a></li>
-                <li><a href="#events">EVENTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-				
-                <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                <li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                <li><a data-toggle="modal" data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Signup</a></li>
-                </ul>
-                </li>
-              </ul>
-            </div>
-	</div>
-</nav>
-<div class="row bg-grey">
-     <div class="col-md-12 col-xs-12" align="right">
-     <b><br><br>THAPAR &nbsp;UNIVERSITY &nbsp;SOCIETIES &nbsp;AND &nbsp;EVENTS &nbsp;&nbsp;&nbsp;</b>
-     </div>
-</div>
-
-<!-- Login Modal -->
-<div class="modal fade" id="loginModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<!--header-->
-            <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title">Log-in</h3>
-			</div>
-			<!--body-->
-            <div class="modal-body">
-				<form role="form">
-                <div class="form-group">
-					<input type="email" class="form-control" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Password">
-				</div>
-				</form>
-			</div>
-            <!--footer-->
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-block">Submit</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Signup Modal -->
-<div class="modal fade" id="signupModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<!--header-->
-            <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title">Signup</h3>
-			</div>
-			<!--body-->
-            <div class="modal-body">
-				<form role="form">
-                <div class="form-group">
-					<input type="text" class="form-control" placeholder="Name">
-				</div>
-				<div class="form-group">
-					<input type="email" class="form-control" placeholder="E-mail id">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Roll No.">
-				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Password">
-				</div>
-				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Re-enter password">
-				</div>
-				</form>
-			</div>
-            <!--footer-->
-            <div class="modal-footer">
-                <button class="btn btn-primary btn-block">Submit</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Carousel-->
-<div style="background-color:#D3D3D3" data-scroll-speed=9;>
-<div id="myCarousel" class="carousel slide " data-ride="carousel" data-interval="2000" data-pause="hover">
-  <!-- Indicators (dots)-->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">  <!-- inner: adds slides to carousel-->
-    <div class="item active">   <!--item: specifies content of each slide-->
-      <img src="collegefest1.jpg" class="img-responsive " alt="IMG2"/>
-    </div>
-
-    <div class="item">
-      <img src="collegefest2.jpg" alt="IMG3" class="img-responsive "/>
-    </div>
-
-    <div class="item">
-      <img src="collegefest3.jpg" alt="IMG1" class="img-responsive "/>
-    </div>
-	
-	<div class="item">
-      <img src="collegefest4.jpg" alt="IMG1" class="img-responsive " />
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">  <!--left & right-carousel-control: adds left and right buttons-->
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-
-<!--About-->
-<div id="about" class="container-fluid">
-     <div class="row">
-     <p id="abt" style="font-size:19px">
-		<span id="firstletter">Thapar University</span>, formerly known as Thapar Institute of Engineering and Technology, was founded
-		in 1956 by Karam Chand Thapar and is situated in Patiala. It has grown in size and activities 
-		during the last five decades of its existence. It was granted full autonomy and the status of a 
-		University by the University Grants Commission in 1985. It was ranked #5 by the limited participation
-		CSR-GHRDC Engineering Colleges Survey 2011.</p><br>
-	     <p style="font-size:19px">	
-		Thapar Institute of Engineering and Technology University strives to maintain an environment 
-	    that encourages scholarly inquiry and research, a spirit of creative independence and a deep 
-	    commitment to academic excellence. Its students as unique individuals with different interests 
-		and aspirations. The diverse programs and activities aimed at developing quality of mind, ethical 
-		standard, social awareness and global perspectives, let the students shape their own TU experience 
-		and grow. The Alums of Thapar Institute of Engineering and Technology University are well placed
-		for their quality and performance across the globe which is reflected in their excellent contribution 
-		to society in varied fields such as business and industry, administrative and regulatory services, 
-		research and education and social and human rights organizations.
-		</p>	
-     </div>
-</div>
-
-<!--societies-->
-<div id="societies" data-scroll-speed=3; class="container-fluid text-center">
-
-	<h2><u>THAPAR UNIVERSITY SOCIETIES</u></h2>
-	<h4><i>Paths for recreation and development of students</i></h4><br>
-
-	<div class="row">
-		<div class="col-md-4 logo1">
-			<a href="uni_soc.php">
-			<span class="glyphicon glyphicon-music logo-small"></span>
-			<h4>UNIVERSITY SOCIETIES</h4></a>
-		</div>
-		<div class="col-md-4 logo2">
-			<a href="dep_soc.php">
-			<span class="glyphicon glyphicon-pencil logo-small"></span>
-			<h4>DEPARTMENTAL SOCIETIES</h4></a>
-		</div>
-		<div class="col-md-4 logo3">
-			<a href="sc_soc.php">
-			<span class="glyphicon glyphicon-education logo-small"></span>
-			<h4>STUDENT CHAPTER</h4></a>
-		</div>
-    </div><br><br>
-	
-  <div class="row">
-    <div class="col-md-1">
-    </div>
-    <div class="col-md-4" logo4>
-      <a href="scc_soc.php">
-      <span class="glyphicon glyphicon-user logo-small"></span>
-      <h4>STUDENT CONSULTATIVE COMMITTEE (SCC)</h4></a>
-    </div>
-    <div class="col-md-2">
-    </div>
-    <div class="col-md-4 logo5">
-      <a href="nss_soc.php">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>NSS NATIONAL SOCIAL SERVICES</h4></a>
-    </div>
-    <div class="col-md-1">
-    </div>
-  </div>
-
-</div>
-
-<!--events-->
-<div id="events" class="container-fluid bg-grey-dark text-center">
-     <h2><u>THAPAR UNIVERSITY EVENTS</u></h2>
-	 <h4><i>Reinforce the culture with technicality add-on</i></h4><br>
-        <div class="row">
-		    <div class="col-md-2"></div>
-			<a href="upcoming_eve1.php" onclick="document.location= upcoming_eve1.php;return false;" >
-				<div class="col-md-3 image_container">
-					<img class="events_img" src="drum.jpg" alt="drum.jpg">
-						<div class="overlay_left">
-							<div class="text_image">UPCOMING</div>
-						</div>	
-				</div></a>
-			<div class="col-md-1"></div>
-			<a href="missed_eve1.php" onclick="document.location= missed_eve1.php;return false;" >
-				<div class="col-md-3 image_container">
-					<img class="events_img" src="piano.jpg" alt="piano.jpg">
-						<div class="overlay_right">
-							<div class="text_image">MISSED</div>
-						</div>
-				</div></a>
-			<div class="col-md-2"></div>
-		</div>
-</div>
-
-<!--contact-->
-<div class="container-fluid ">
-<div id="contact" class="container text-center" align="center">
-<h2>CONTACT US</h2>
-<h4>Contact us and we'll get back to you within 24 hours.</h4><br>
-<input class="form-control" id="name" name="name" placeholder="Name" type="text" required><br>
-<input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
-<button class="btn btn-default pull-right" type="submit">Send</button><br><br>
-<h4>OR</h4>
-<div class="row">
-<div class="col-md-4"><span class="glyphicon glyphicon-map-marker"></span> Abhishek Attri<br>Hostel ICONIC,<br> Thapar University,<br>Patiala.</div>
-<div class="col-md-4"><span class="glyphicon glyphicon-phone"></span> +91 8288080460</div>
-<div class="col-md-4"><span class="glyphicon glyphicon-envelope"></span> aattri90@gmail.com</div>
-</div>
- </div>
- </div>
- 
- <!-- footer-->
-<footer class="footer container-fluid text-center bg-grey">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
- </footer>
-<script>
-
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-    // Prevent default anchor click behavior
-    event.preventDefault();
-
-    // Store hash
-    var hash = this.hash;
-
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 900, function(){
-   
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  });
-
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
-
-
-</body>
-</html>
+<!DOCTYPE html><html> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width"> <title>Privacy Policy</title> <style>body{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; padding:1em;}</style></head> <body><h2>Privacy Policy</h2> <p> Abhishek Attri built the BookShelf app as a Free app. This SERVICE is provided by Abhishek Attri at no cost and is intended for use as is.
+                  </p> <p>This page is used to inform website visitors regarding my policies with the collection, use, and
+                    disclosure of Personal Information if anyone decided to use my Service.
+                  </p> <p>If you choose to use my Service, then you agree to the collection and use of information in relation
+                    to this policy. The Personal Information that I collect is used for providing and improving the
+                    Service. I will not use or share your information with anyone except as described
+                    in this Privacy Policy.
+                  </p> <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible
+                    at BookShelf unless otherwise defined in this Privacy Policy.
+                  </p> <p><strong>Information Collection and Use</strong></p> <p>For a better experience, while using our Service, I may require you to provide us with certain
+                    personally identifiable information. The information that I request is retained on your device and is not collected by me in any way
+                  </p> <p>The app does use third party services that may collect information used to identify you.</p> <div><p>Link to privacy policy of third party service providers used by the app</p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank">Google Play Services</a></li> <!----> <!----> <!----> <!----> <!----></ul></div> <p><strong>Log Data</strong></p> <p> I want to inform you that whenever you use my Service, in a case of an
+                    error in the app I collect data and information (through third party products) on your phone
+                    called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address,
+                    device name, operating system version, the configuration of the app when utilizing my Service,
+                    the time and date of your use of the Service, and other statistics.
+                  </p> <p><strong>Cookies</strong></p> <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These
+                    are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+                  </p> <p>This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries
+                    that use “cookies” to collect information and improve their services. You have the option to either
+                    accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to
+                    refuse our cookies, you may not be able to use some portions of this Service.
+                  </p> <p><strong>Service Providers</strong></p> <p> I may employ third-party companies and individuals due to the following reasons:</p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p> I want to inform users of this Service that these third parties have access to your
+                    Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they
+                    are obligated not to disclose or use the information for any other purpose.
+                  </p> <p><strong>Security</strong></p> <p> I value your trust in providing us your Personal Information, thus we are striving
+                    to use commercially acceptable means of protecting it. But remember that no method of transmission over
+                    the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee
+                    its absolute security.
+                  </p> <p><strong>Links to Other Sites</strong></p> <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed
+                    to that site. Note that these external sites are not operated by me. Therefore, I strongly
+                    advise you to review the Privacy Policy of these websites. I have no control over
+                    and assume no responsibility for the content, privacy policies, or practices of any third-party sites
+                    or services.
+                  </p> <p><strong>Children’s Privacy</strong></p> <p>These Services do not address anyone under the age of 13. I do not knowingly collect
+                    personally identifiable information from children under 13. In the case I discover that a child
+                    under 13 has provided me with personal information, I immediately delete this from
+                    our servers. If you are a parent or guardian and you are aware that your child has provided us with personal
+                    information, please contact me so that I will be able to do necessary actions.
+                  </p> <p><strong>Changes to This Privacy Policy</strong></p> <p> I may update our Privacy Policy from time to time. Thus, you are advised to review
+                    this page periodically for any changes. I will notify you of any changes by posting
+                    the new Privacy Policy on this page. These changes are effective immediately after they are posted on
+                    this page.
+                  </p> <p><strong>Contact Us</strong></p> <p>If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact
+                    me.
+                  </p> <p>This privacy policy page was created at <a href="https://privacypolicytemplate.net" target="_blank">privacypolicytemplate.net</a>                    and modified/generated by <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank">App Privacy Policy Generator</a></p></body></html>
